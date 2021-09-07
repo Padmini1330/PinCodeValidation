@@ -8,7 +8,7 @@ public class PinCodeRegEx
 
 	public static boolean pinCodeValidator(String pinCode) 
 	{
-		Pattern pattern=Pattern.compile("[0-9]{6}$");
+		Pattern pattern=Pattern.compile("^[0-9]{6}$");
 		Matcher matcher=pattern.matcher(pinCode);
 		return matcher.matches();
 	}
@@ -16,12 +16,12 @@ public class PinCodeRegEx
 	public static void main(String[] args) 
 	{
 		System.out.println("**Welcome to Pincode Evaluator**");
-		String pinCode="400088";
+		String pinCode="A400088";
 		boolean isPinCode=pinCodeValidator(pinCode);
 		if(isPinCode)
-			System.out.println("Entered pincode is VALID");
+			System.out.println("Pincode "+pinCode+" is VALID");
 		else
-			System.out.println("Entered pincode is NOT VALID");
+			System.out.println("Pincode "+pinCode+" is INVALID");
 
 	}
 
