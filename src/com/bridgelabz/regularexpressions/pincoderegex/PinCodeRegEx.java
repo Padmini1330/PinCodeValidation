@@ -16,6 +16,7 @@ public class PinCodeRegEx
 	public static void main(String[] args) 
 	{
 		System.out.println("**Welcome to Pincode Evaluator**");
+		
 		String pinCode="400 088";
 		boolean isPinCode=pinCodeValidator(pinCode);
 		if(isPinCode)
